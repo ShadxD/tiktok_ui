@@ -5,8 +5,8 @@ class UserUploadPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Center(child: Text('404 ERROR')),
-    );
+    return const Center(
+        child: Text('404 ERROR',
+            style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)));
   }
 }

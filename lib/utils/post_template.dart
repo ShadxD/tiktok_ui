@@ -4,6 +4,7 @@ import 'button.dart';
 
 class PostTemplate extends StatelessWidget {
   const PostTemplate({
+    super.key,
     required this.username,
     required this.videoDescription,
     required this.videoTags,
@@ -38,7 +39,7 @@ class PostTemplate extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '@' + username,
+                    '@$username',
                     style: const TextStyle(
                         fontWeight: FontWeight.bold, fontSize: 16),
                   ),
